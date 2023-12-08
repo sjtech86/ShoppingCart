@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="./ecommerce.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="myheader">
+            <div class="title">
+                <p class="logo">Logo</p>
+            </div>
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p id="count">0</p>
+
+
+
+
+            </div>
+        </header>
+
+        <div class="box">
+            <div id="box1">
+                <div class="productCard">
+                    <div class="imgbox">
+                        <img src="./images/81fPKd-2AYL._AC_SL1500_.jpg" alt="bag image">
+                    </div>
+                    <div class="bottom">
+                        <p>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</p>
+                        <p class="price">£109.95</p>
+                        <button onclick="addtocart">Add to cart</button>
+                    </div>
+                </div>
+
+            </div>
+            <div id="box2">
+                <div class="cart-header">
+                    <p>My Cart</p>
+                    <button class="btn" onclick="deleteAll()">Empty Cart</button>
+                </div>
+                <div id="cart-items">
+                    <div class="cart-item">
+                        <div class="product-icon">
+                            <img src="./images/white tshirt.jpg" alt="white t-shirt">
+                        </div>
+                        <p class="detail">Mens Casual Premium Slim Fit T-Shirts</p>
+                        <p class="price">£ 22.3.00</p>
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </div>
+                    Your cart is empty
+                </div>
+                <hr>
+                <div class="cart-total">
+                    <p>Total</p>
+                    <p id="total-price" class="price">£0.00</p>
+                </div>
+            </div>
+        </div>
+        <!-- <script src="./api.js"></script> -->
+        <script src="./ecommerce.js"></script>
+</body>
+
+</html>
